@@ -113,6 +113,7 @@ Wait for few second as initial opening can lag due to large size libraries.
 Option 3: Run from Source Code
 ------------------------
 pip install numpy pandas matplotlib scipy pillow
+
 python BSF.py
 
 ---------------------------------------------------------------------
