@@ -74,15 +74,9 @@ Steps:
 
 SYSTEM REQUIREMENTS
 -------------------
-Operating System: Ubuntu
-- Tested on Ubuntu 24.04
+Operating System: Ubuntu 24.04 and above
 
-Operating System : Windows
-
-
-
-
-
+Operating System : Windows 10 and above
 
 For source version:
 - Python ≥ 3.8
@@ -100,37 +94,26 @@ For source version:
 INSTALLATION
 ------------
 
-Option 1: Run Precompiled Executable -- Ubuntu
+Option 1: Run Precompiled Executable -- Ubuntu 24.04 and above
 -----------------------------------
-chmod +x claude
-./claude
+chmod +x BSF_Tool
+./BSF_Tool
 
 (No installation required)
 
-Option 2: Run from Source Code
+Option 2: Run .exe -- windows 10 and above
+-----------------------------------
+open the BSF_Tool.exe
+
+Wait for few second as initial opening can lag due to large size libraries.
+
+(No installation required)
+
+
+Option 3: Run from Source Code
 ------------------------
 pip install numpy pandas matplotlib scipy pillow
-python claude.py
-
----------------------------------------------------------------------
-
-DIRECTORY STRUCTURE
--------------------
-BSF_GUI/
-
-│-- claude.py
-│-- beam_data/
-│     ├── Narrow_Series/
-│     ├── Wide_Series/
-│     └── ...
-│
-│-- bsf_data/
-│     ├── Slab_Phantom/
-│     ├── Cylinderical_Phantom/
-│     └── ...
-│
-│-- barc_logo.png
-│-- README.txt
+python BSF.py
 
 ---------------------------------------------------------------------
 
@@ -178,7 +161,7 @@ The tool has been validated against:
 LIMITATIONS
 -----------
 - Accuracy depends on input spectral resolution
-- Extrapolation beyond data range may introduce uncertainty
+- Extrapolation beyond data range (i.e. 2 MeV) may introduce uncertainty
 - Applicable only to photon beams
 
 ---------------------------------------------------------------------
@@ -188,8 +171,8 @@ TROUBLESHOOTING
 
 Issue: Application does not start
 Solution:
-chmod +x claude
-./claude
+chmod +x BSF_Tool
+./BSF_Tool
 
 Issue: Missing data or empty plot
 Solution:
