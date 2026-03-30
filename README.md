@@ -97,6 +97,7 @@ INSTALLATION
 Option 1: Run Precompiled Executable -- Ubuntu 24.04 and above
 -----------------------------------
 chmod +x BSF_Tool
+
 ./BSF_Tool
 
 (No installation required)
